@@ -741,3 +741,51 @@ th, td {
   color: #6c757d; /* Couleur grise pour la page actuelle */
   pointer-events: none; /* Empêcher l'interaction avec la page actuelle */
 }
+/* image*/
+img{max-width: 100%;}
+
+.grid-1fr-2fr-1fr, .liste-cartes{
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 30px;
+}
+
+.grid-1fr-2fr {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: start;
+  gap: 30px;  
+}
+
+
+.grid-4-col{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.span-2x2{
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.grid-4-col li{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#img-beigne{
+  grid-row: 4;
+  grid-column: 2;
+}
+#img-pizza{
+  grid-row: 4;
+  grid-column: 4;
+}
+#img-boisson{
+  grid-column: 3;
+}
+.liste-img{
+  padding: 0;
+  list-style-type: none;
+}
