@@ -1,0 +1,743 @@
+
+/* import fonts googleapis  */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*
+{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: "Poppins", serif ;
+
+} 
+
+
+/* Header  */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #e69830;
+  color: #fff;
+}
+
+
+  /* Logo */
+.logo {
+  width: 70px;
+  height: 70px;
+  margin-right: 15px;
+}
+.logo-titre {
+  display: flex;
+  align-items: center;
+}
+
+ h1 {
+  padding-left: 20px;
+  font-size: 1.8em;
+  margin: 0;
+}
+
+  /* Menu navigation */
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  margin: 0 15px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+    /* active page  */
+.activePage {
+  font-weight: bold;
+}
+    
+
+
+
+
+.container{
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+/* section 1*/
+
+
+.section1
+{
+
+
+	padding: 20px 100px;
+    position: relative;
+    height: 100vh;
+    background-image: url('../img/from-assorted-baked-with-baklava-baklava-sheki-human-hand-copper-plate_176474-2606.jpg'); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;  
+              }
+
+
+  
+ .info {
+
+margin-top: 10%;
+max-width: 400px;
+width: 90%;
+
+
+    }
+ 
+ .info  h1{
+
+ font-size: xx-large;
+color: #333;
+font-weight: bold;
+letter-spacing :normal;
+} 
+.info  h2{
+
+  font-size: xx-large;
+ color: #fdfbfb;
+
+ } 
+
+.info p {
+
+ color: white ;
+ font-size: 12px;
+margin:  10px 0 30px;
+
+ 
+ }
+
+
+ .info .btn 
+             
+ {
+
+padding: 15px 80px ;
+font-size: 18px;
+   }
+ .btn 
+             
+{
+display: inline-block;
+text-decoration: none;
+
+background-color: #cc7838;
+color: #fff;
+border: #f4f3f0;
+border-radius: 20px;
+  }
+
+.section2{
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  gap: 20px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  height: 500px
+}
+.left {
+  flex: 1;
+    text-align: left;
+    align-items: center;
+}
+
+.left p {
+  font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+}
+
+
+.images {
+  flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.images img {
+ 
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+
+/* affichage video  */
+
+.video {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+video {
+  max-width: 100%;
+
+}
+
+footer {
+  text-align: center;  
+  padding: 20px;
+ margin: 0 auto;
+
+}
+
+ .footer {
+
+  display: flex;
+  justify-content: space-between;  
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto; 
+
+}
+
+
+.footerleft    {
+
+  text-align: left;
+}
+
+
+
+
+
+
+.footerright  {
+  
+
+  text-align: right;
+}
+
+/* page nos services  */
+.nosservices {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.services {
+ 
+         
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+            padding: 15px;
+
+
+}
+.btn-reserver {
+  background-color: #e97714;
+  color: white;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 20px; /*  pour l'espace entre l'écriture et les bordures*/
+  border-radius: 0;
+}
+.btn-reserver:hover{
+ 
+    background-color: #636663; /*ici j'ai fait le choix pour présenter l'option Hover*/
+ 
+}
+
+.btn-reserver  a{
+text-decoration: none;
+color: white;
+
+}
+.services  img {
+  width: 100%;
+  border-radius: 8px;
+  position: relative;
+  display: inline-block;
+}
+
+.services  h2 {
+  font-size: 1.5rem;
+  color: #f57302;
+  margin: 10px 0;
+}
+
+.services  p {
+  font-size: 1rem;
+  color: #555;
+  margin: 10px 0;
+}
+/* button solde   */
+.btn-solde {
+  background-color: #FF5733; 
+  color: white; 
+  font-size: 15px; 
+  font-weight: bold;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  bottom: 10px;
+    right: 10px;
+float: right;
+
+padding: 5px;
+
+}
+
+
+.btn-solde:hover {
+  background-color: #e96262;  
+}
+
+
+.sectionclients  {
+
+  background-color: #e69830 ;
+  padding: 20px;
+
+  
+  }
+.clientssatisfaits  {
+  display:flex;
+  justify-content: space-around;
+  padding: 100px;
+
+  
+  }
+
+
+.clientphoto img {
+border-radius: 20px;
+  display: block;
+  object-fit: cover;
+}
+
+.clientphoto {
+  width: 60px;
+  height: 60px;
+  max-width: 60px;
+  max-height: 60px;
+  border-radius: 50%; /* radius et border pour cercler l'image du client*/
+  border: 2px solid #ddd;
+  position: relative;
+  margin-top: -50px;/*j'ai fait le décalage pour respecter les normes de la maquette*/
+  margin-left: -18px;
+
+}
+
+.footerhr {
+
+  height: 2px;
+  border-width: 0;
+  background-color: rgb(0, 0, 0);
+  
+}
+ 
+
+.box {
+
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: left;
+  padding: 20px;
+}
+
+
+.box p {
+  font-size: 1em;
+  margin: 10px 0;
+}
+
+
+
+/* page blogue  */
+
+.h1blogue {
+  margin-left: 3.5%; /* pour ajuster la même marge comme ce qui est mentionné sur la maquette*/
+}
+.blogue {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.blogueimage {
+  flex: 1;
+  max-width: 40%;
+  margin-right: 20px;
+}
+
+.blogueimage img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.bloguetext {
+  flex: 2;
+  float: right;
+}
+
+.blogueimage2 {
+  flex: 1;
+ max-width: 40%;
+float:right;
+}
+
+.blogueimage2   img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+.bloguetext2 {
+  flex: 2;
+  margin-right: 20px;
+
+}
+
+
+
+.bloguetext h2 {
+  font-size: 2em;
+  color: #d2691e;
+}
+.bloguetext2 h2 {
+  font-size: 2em;
+  color: #d2691e;
+}
+.bloguetext2  p {
+  line-height: 1.6;
+  margin-top: 10px;
+ }
+
+.bloguetext p {
+  line-height: 1.6;
+  margin-top: 10px;
+}
+
+.btn-blogue {
+  
+
+
+
+background-color: #ffffffeb;/*j'ai fait un petit changement de couleur*/
+  color: rgb(5, 5, 5);
+  border: 1px solid #b9b7b7; /* les bordures étaient neccessaires pour garder la mise en forme de la maquette*/
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 20px;
+  padding:5px 20px;/*là, pour laisser l'espace entre la bordure et l'écriture*/
+}
+
+/* page nous joindre  */
+
+.h1Marg {
+  margin-left: 3.5%; /* pour ajuster la même marge comme ce qui est mentionné sur la maquette*/
+}
+.contact-section {
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-list {
+  margin-left: 5%;
+  list-style-type: none;
+  padding: 0;
+}
+
+.contact-list li {
+  margin-bottom: 15px;
+  font-size: 16px;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+}
+
+.contact-icon {
+  width: 24px; /* Taille de l'icône */
+  height: 24px;
+  margin-right: 10px; /* Espacement entre l'icône et le texte */
+}
+
+.contact-list a {
+  color: #080808;
+  text-decoration: none;
+}
+
+.contact-list a:hover {
+  text-decoration: underline;
+}
+/* iframe  */
+ iframe{
+  
+  width: 90%;
+  margin-top: 3%;
+  margin-left: 5%;
+}
+
+
+
+/* page details  services  */
+
+.detailsserivce h2 {
+ text-align: center;
+ justify-content: center;
+}
+
+
+
+.servicelist {
+  margin-left: 3.5%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.servicelist li {
+  font-size: 18px;
+  padding: 10px 0;
+  cursor: pointer;
+  line-height: 1rem;
+}
+
+.leftcontent {
+  float: left;
+  width: 23.33%;
+  margin-left: 3.5%;
+  
+  
+  }
+  .leftcontent  a {
+
+ text-decoration: none;
+ color:black;
+    
+    }
+
+    .midellecontent {
+ margin: 0 auto;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ padding: 20px;
+
+      }
+
+
+
+
+.detailleserviceimage 
+{
+
+  flex: 1;
+margin-right: 60px;
+
+  }
+
+  .detailleserviceimage  img
+{
+border-radius: 10px;
+
+  
+  }
+
+.detailleservicetext {
+
+  flex: 2;
+  text-align: center;
+ 
+
+  }
+
+
+
+
+
+.sectiondescriptionserivice   {
+
+  background-color: #e69830 ;
+  padding: 20px;
+
+  
+  }
+
+
+  .sectiondescriptionserivice  h2  {
+
+    margin-left: 3.5%; /* pour ajuster la même marge comme ce qui est mentionné sur la maquette*/
+
+    color: white; 
+ 
+  text-align: center;
+
+    }
+
+  .detailleservice  {
+    display:flex;
+    padding: 100px;
+  line-height: 2rem;
+  justify-content: center;
+    
+    }
+
+    .detailleservice  p {
+      
+    line-height: 2rem;
+    letter-spacing: normal; 
+    text-align: center;
+      }
+  
+  
+
+
+/* page nous forfaits   */
+.h1forfaits {
+  margin-left: 3.5%; /* pour ajuster la même marge comme ce qui est mentionné sur la maquette*/
+}
+.sectiontableau {
+
+
+
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 700px;
+  max-height: max-content;
+  margin: 0 auto;
+  display: flex;
+ 
+}
+
+table {
+  width: 140%;
+  border-collapse: collapse;
+  text-align: center;
+  justify-content: center;
+
+  
+}
+
+thead {
+  background-color: #442003;
+  color: white;
+}
+
+th, td {
+  padding: 15px;
+  border: 1px solid #ddd;
+}
+
+.titre-tableau {
+  background-color: #db9245;
+  font-weight: bold;
+}
+
+
+
+
+
+
+.btn-forfaits {
+  background-color: #e97714;/*j'ai fait un petit changement de couleur*/
+  color: rgb(252, 251, 251);
+  font-size: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 10px;
+  padding:5px 20px; /*là, pour laisser l'espace entre la bordure et l'écriture*/
+}
+.btn-forfaits:hover {
+  background-color: #dd2828;
+}
+
+/*--------------------------------------------------------------------------------------------*/
+.breadcrumb {
+  list-style: none; /* Retirer les puces de la liste */
+  padding: 0;
+  margin: 0;
+  background-color: #f9f9f9; /* Fond clair */
+  display: flex;
+  font-family: Arial, sans-serif; /* Choisir une police de caractère */
+}
+
+.breadcrumb li {
+  margin-right: 10px; /* Espacement entre les éléments */
+}
+
+.breadcrumb li a {
+  text-decoration: none; /* Enlever le soulignement des liens */
+  color: #007bff; /* Couleur bleue pour les liens */
+}
+
+.breadcrumb li a:hover {
+  text-decoration: underline; /* Souligner le lien au survol */
+}
+
+.breadcrumb li + li::before {
+  content: "›"; /* Ajouter un séparateur entre les éléments */
+  margin-left: 10px;
+  color: #999; /* Couleur du séparateur */
+}
+
+.breadcrumb li[aria-current="page"] {
+  color: #6c757d; /* Couleur grise pour la page actuelle */
+  pointer-events: none; /* Empêcher l'interaction avec la page actuelle */
+}
