@@ -316,11 +316,11 @@ body {
 
 /* Styles spécifiques pour chaque image */
 .image1,
-.image2 {
+.image2 {object-fit: cover; 
   width: 100%; grid-column: span 1; /* Les images 1 et 2 ont la taille normale */
 }
 
-.image3 {
+.image3 { 
   grid-column: span 2; /* La troisième image occupe 2 colonnes */
 }
 
@@ -330,5 +330,11 @@ body {
 
 .image5,
 .image6 {
+  object-fit: cover; 
   grid-column: span 1; /* Les images 5 et 6 prennent 1 colonne */
+}
+img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
