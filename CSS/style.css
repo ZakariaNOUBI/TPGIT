@@ -46,6 +46,7 @@
   display: flex;
   margin: 0;
   padding: 0;
+  margin-left: 30px;
 }
 
 .navbar li {
@@ -339,3 +340,51 @@ img{
   height: 100%;
   object-fit: cover;
 }
+.imgacc{
+
+  /*width: 600px;
+  height: 600px;
+  margin-top: 5%;
+  margin-left: 70%;*/
+  
+    width: 600px; /* Lar3geur de l'image (300px) */
+    height: 600px; /* Hauteur de l'image (300px) */
+    object-fit: cover; /* Permet de remplir l'espace sans déformation */
+    border-radius: 8px; /* Facultatif : arrondir les coins de l'image */
+}
+.container{
+  
+  width: 90%; /* Largeur du container (80% de la page) */
+  max-width: 1400px; /* Largeur maximale du container */
+  margin: 0 auto; /* Centrer le container horizontalement */
+  padding: 20px; /* Espacement interne (padding) */
+  background-color: #7b0f0f; /* Couleur de fond du container */
+  
+  
+
+  display: flex; /* Utilisation de Flexbox pour disposer les éléments à l'intérieur */
+  justify-content: space-between; /* Espace entre le contenu et l'image */
+  align-items: center; /* Aligner verticalement au centre */
+  border-radius: 8px; /* Bordure arrondie */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre portée */
+
+}
+.content {
+  flex: 1; /* Le contenu prend tout l'espace restant */
+  padding-right: 20px; /* Espacement entre le contenu et l'image */
+}
+.section1
+{
+
+
+	padding: 20px 100px;
+    position: relative;
+    height: 100vh;
+    background-image: url('../img/from-assorted-baked-with-baklava-baklava-sheki-human-hand-copper-plate_176474-2606.jpg'); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;  
+              }
