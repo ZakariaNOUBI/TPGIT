@@ -390,6 +390,7 @@ img{
               }
               .classeh2{
                 padding-left: 20px;
+            
               }
 
               /*--------------------------------------------------------*/
@@ -398,21 +399,37 @@ img{
                 flex-wrap: wrap;
                 gap: 20px; /* Espace entre les éléments */
                 justify-content: space-between;
-                width: 90%;
-                max-width: 1000px;
-                margin-left: 15%;
-                margin-top: 20px;
+                width: 100%;
+                max-width: 1200px;
+                margin-left: 10%;
+                padding: 20px;
               }
               
-              .review {
+              
+            .review {
                 background-color: #76757a;
                 padding: 20px;
-                width: calc(34% - 20px); /* 3 avis par ligne */
+                width: calc(33% - 20px); /* 3 avis par ligne */
                 border-radius: 8px;
                 box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
                 box-sizing: border-box;
                
               
+              } 
+              /*  .review  {
+
+                background-color: white;
+                border: 1px solid #ddd;
+                padding: 20px;
+                border-radius: 10px;
+                text-align: left;
+                padding: 20px;
+              }*/
+              
+              
+              .review p {
+                font-size: 1em;
+                margin: 10px 0;
               }
               
               .review-header {
