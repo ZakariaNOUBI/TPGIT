@@ -15,22 +15,25 @@
             <a href="index.html">
                 <img src="img/logofinale.png" alt="Logo" class="logo">
             </a>
-            <h1> la restauration marocaine</h1>
+            <h1> La restauration marocaine</h1>
 
         </div>
         <!-- barre du navigation -->
         <nav class="navbar">
             <ul>
                 <li><a href="index.html">Accueil</a></li>
-                <li><a href="réservation.html">réservation</a></li>
+                <li><a href="Réservation.html">Réservation</a></li>
                 <li><a href="Restaurant.html">Restaurant</a></li>
-                <li><a href="macommande.html">Ma commande</a></li>
+                <li><a href="Macommande.html">Ma commande</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="container">
         <h1>Formulaire de réservation</h1>
+        <section class="containerRes">
+            
+            <div class="divForm"> 
+        
 
         <form action="confirmation.html" method="post">
             <!-- Prénom et Nom -->
@@ -44,7 +47,7 @@
     
             <!-- Numéro de téléphone -->
             <label for="telephone">Numéro de téléphone :</label>
-            <input type="tel" id="telephone" name="telephone" pattern="^\d{10}$" placeholder="Ex: 0123456789" required>
+            <input type="tel" id="telephone" name="telephone" pattern="^\d{10}$" placeholder="Ex: 000-000-0000" required>
             <br><br>
     
             <!-- Nombre de personnes -->
@@ -100,8 +103,9 @@
             <br><br>
     
             <!-- Bouton de soumission -->
-            <button type="submit">Confirmer la réservation</button>
+            <button class="btn" type="submit">Confirmer la réservation</button>
         </form>
+    </div>
         </section>
     </main>
 </body>

@@ -1,15 +1,11 @@
-
 /* import fonts googleapis  */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-*
-{
- margin: 0;
- padding: 0;
- box-sizing: border-box;
- font-family: "Poppins", serif ;
-
-} 
-
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", serif;
+}
 
 /* Header  */
 .header {
@@ -21,8 +17,7 @@
   color: #fff;
 }
 
-
-  /* Logo */
+/* Logo */
 .logo {
   width: 70px;
   height: 70px;
@@ -33,13 +28,13 @@
   align-items: center;
 }
 
- h1 {
+h1 {
   padding-left: 20px;
   font-size: 1.8em;
   margin: 0;
 }
 
-  /* Menu navigation */
+/* Menu navigation */
 
 .navbar ul {
   list-style: none;
@@ -63,17 +58,12 @@
   text-decoration: underline;
 }
 
-    /* active page  */
+/* active page  */
 .activePage {
   font-weight: bold;
 }
-    
 
-.container{
-  max-width: 1200px;
-  width: 90%;
-  margin: 0 auto;
-}
+
 /* page nous joindre  */
 
 .h1Marg {
@@ -116,21 +106,21 @@
   text-decoration: underline;
 }
 /* iframe  */
- iframe{
-  width: 600px;  /* Largeur de l'iframe */
-    height: 600px;
+iframe {
+  width: 600px; /* Largeur de l'iframe */
+  height: 600px;
   /*width: 90%;*/
-  
-  
 }
 .content {
-  width: 100%;
   
+  width: 100%;
+
   padding: 0 100px; /* Ajoute 150px de marge intérieure (padding) à gauche et à droite */
   display: flex;
   flex-direction: column;
   gap: 20px;
   margin: 0 auto; /* Centre le contenu horizontalement */
+  margin-top: 5%;
 }
 
 /* Grille des images */
@@ -182,8 +172,6 @@
   margin-left: 23%;
 }
 
-
-
 /*--------------------------------------------------------------------------------------------*/
 .breadcrumb {
   list-style: none; /* Retirer les puces de la liste */
@@ -218,9 +206,12 @@
   pointer-events: none; /* Empêcher l'interaction avec la page actuelle */
 }
 /* image*/
-img{max-width: 100%;}
+img {
+  max-width: 100%;
+}
 
-.grid-1fr-2fr-1fr, .liste-cartes{
+.grid-1fr-2fr-1fr,
+.liste-cartes {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   gap: 30px;
@@ -230,67 +221,61 @@ img{max-width: 100%;}
   display: grid;
   grid-template-columns: 1fr 2fr;
   align-items: start;
-  gap: 30px;  
+  gap: 30px;
 }
 
-
-.grid-4-col{
+.grid-4-col {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
 
-.span-2x2{
+.span-2x2 {
   grid-column: span 2;
   grid-row: span 2;
 }
 
-.grid-4-col li{
+.grid-4-col li {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-#img-beigne{
+#img-beigne {
   grid-row: 4;
   grid-column: 2;
 }
-#img-pizza{
+#img-pizza {
   grid-row: 4;
   grid-column: 4;
 }
-#img-boisson{
+#img-boisson {
   grid-column: 3;
 }
-.liste-img{
+.liste-img {
   padding: 0;
   list-style-type: none;
 }
 
 footer {
-  text-align: center;  
+  text-align: center;
   padding: 20px;
- margin: 0 auto;
-
+  margin: 0 auto;
 }
- .footer {
-
+.footer {
   display: flex;
-  justify-content: space-between;  
+  justify-content: space-between;
   align-items: center;
   width: 100%;
   max-width: 1200px;
-  margin: 0 auto; 
-
+  margin: 0 auto;
 }
-.footerleft    {
-
+.footerleft {
   text-align: left;
 }
 
-.footerright  {
-  
-
+.footerright {
   text-align: right;
+  margin: 0%;
 }
 /*----------------------------------------------------------------------------------*/
 * {
@@ -318,11 +303,13 @@ body {
 
 /* Styles spécifiques pour chaque image */
 .image1,
-.image2 {object-fit: cover; 
-  width: 100%; grid-column: span 1; /* Les images 1 et 2 ont la taille normale */
+.image2 {
+  object-fit: cover;
+  width: 100%;
+  grid-column: span 1; /* Les images 1 et 2 ont la taille normale */
 }
 
-.image3 { 
+.image3 {
   grid-column: span 2; /* La troisième image occupe 2 colonnes */
 }
 
@@ -332,91 +319,93 @@ body {
 
 .image5,
 .image6 {
-  object-fit: cover; 
+  object-fit: cover;
   grid-column: span 1; /* Les images 5 et 6 prennent 1 colonne */
 }
-img{
+img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.imgacc{
-
+.imgacc {
   /*width: 600px;
   height: 600px;
   margin-top: 5%;
   margin-left: 70%;*/
-  
-    width: 600px; /* Lar3geur de l'image (300px) */
-    height: 600px; /* Hauteur de l'image (300px) */
-    object-fit: cover; /* Permet de remplir l'espace sans déformation */
-    border-radius: 8px; /* Facultatif : arrondir les coins de l'image */
+
+  width: 600px; /* Lar3geur de l'image (300px) */
+  height: 600px; /* Hauteur de l'image (300px) */
+  object-fit: cover; /* Permet de remplir l'espace sans déformation */
+  border-radius: 8px; /* Facultatif : arrondir les coins de l'image */
 }
-.container{
-  
+.container {
   width: 90%; /* Largeur du container (80% de la page) */
   max-width: 1400px; /* Largeur maximale du container */
   margin: 0 auto; /* Centrer le container horizontalement */
   padding: 20px; /* Espacement interne (padding) */
-  background-color: #7b0f0f; /* Couleur de fond du container */
-  
-  
+ /* background-color: #f4f4f4;  Couleur de fond du container */
+  margin-top: 5%;
 
   display: flex; /* Utilisation de Flexbox pour disposer les éléments à l'intérieur */
   justify-content: space-between; /* Espace entre le contenu et l'image */
   align-items: center; /* Aligner verticalement au centre */
   border-radius: 8px; /* Bordure arrondie */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre portée */
+}
+.containerRes {
+  width: 90%; /* Largeur du container (80% de la page) */
+  max-width: 1400px; /* Largeur maximale du container */
+  margin: 0 auto; /* Centrer le container horizontalement */
+  padding: 20px; /* Espacement interne (padding) */
+  background-color: #611470; /* Couleur de fond du container */
 
+  display: flex; /* Utilisation de Flexbox pour disposer les éléments à l'intérieur */
+  justify-content: space-between; /* Espace entre le contenu et l'image */
+  align-items: center; /* Aligner verticalement au centre */
+  border-radius: 8px; /* Bordure arrondie */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre portée */
 }
 .content {
   flex: 1; /* Le contenu prend tout l'espace restant */
   padding-right: 20px; /* Espacement entre le contenu et l'image */
 }
-.section1
-{
+.section1 {
+  padding: 20px 100px;
+  position: relative;
+  height: 100vh;
+  background-image: url("../img/from-assorted-baked-with-baklava-baklava-sheki-human-hand-copper-plate_176474-2606.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+}
+.classeh2 {
+  padding-left: 20px;
+}
 
+/*--------------------------------------------------------*/
+.reviews {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Espace entre les éléments */
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin-left: 10%;
+  padding: 20px;
+}
 
-	padding: 20px 100px;
-    position: relative;
-    height: 100vh;
-    background-image: url('../img/from-assorted-baked-with-baklava-baklava-sheki-human-hand-copper-plate_176474-2606.jpg'); 
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    object-fit: cover;  
-              }
-              .classeh2{
-                padding-left: 20px;
-            
-              }
-
-              /*--------------------------------------------------------*/
-              .reviews {
-                display: flex;
-                flex-wrap: wrap;
-                gap: 20px; /* Espace entre les éléments */
-                justify-content: space-between;
-                width: 100%;
-                max-width: 1200px;
-                margin-left: 10%;
-                padding: 20px;
-              }
-              
-              
-            .review {
-                background-color: #76757a;
-                padding: 20px;
-                width: calc(33% - 20px); /* 3 avis par ligne */
-                border-radius: 8px;
-                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-                box-sizing: border-box;
-               
-              
-              } 
-              /*  .review  {
+.review {
+  background-color: #d3ccd6d9;
+  padding: 20px;
+  width: calc(33% - 20px); /* 3 avis par ligne */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+/*  .review  {
 
                 background-color: white;
                 border: 1px solid #ddd;
@@ -425,50 +414,109 @@ img{
                 text-align: left;
                 padding: 20px;
               }*/
-              
-              
-              .review p {
-                font-size: 1em;
-                margin: 10px 0;
-              }
-              
-              .review-header {
-                display: flex;
-                align-items: center;
-                margin-bottom: 15px;
-              }
-              
-              .user-photo {
-                border-radius: 50%;
-                width: 50px;
-                height: 50px;
-                margin-right: 15px;
-              }
-              
-              .user-info .user-name {
-                font-size: 1.1rem;
-                font-weight: bold;
-              }
-              
-              .user-info .user-role {
-                font-size: 0.9rem;
-                color: #777;
-              }
-              
-              .review-text {
-                font-size: 1rem;
-                line-height: 1.6;
-                color: #555;
-              }
-              
-              @media (max-width: 768px) {
-                .review {
-                  width: calc(50% - 20px); /* 2 avis par ligne sur les écrans plus petits */
-                }
-              }
-              
-              @media (max-width: 480px) {
-                .review {
-                  width: 100%; /* 1 avis par ligne sur les très petits écrans */
-                }
-              }
+
+.review p {
+  font-size: 1em;
+  margin: 10px 0;
+}
+
+.review-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.user-photo {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+
+.user-info .user-name {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.user-info .user-role {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.review-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .review {
+    width: calc(50% - 20px); /* 2 avis par ligne sur les écrans plus petits */
+  }
+}
+
+@media (max-width: 480px) {
+  .review {
+    width: 100%; /* 1 avis par ligne sur les très petits écrans */
+  }
+}
+.divForm {
+  /*display: flex;
+  justify-content: center; /* Centre horizontalement */
+  align-items: center; /* Centre verticalement */
+  width: 100%; /* Largeur du container (80% de la page) */
+   /* max-width: 1200px; /* Largeur maximale du container */
+    margin: 0 auto; /* Centrer le container horizontalement */
+    padding: 20px; /* Espacement interne (padding) */
+    background-color: #f4f4f4; /* Couleur de fond du container */
+    border-radius: 8px; /* Bordure arrondie */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre portée */
+}
+.btn {
+	display: inline-block;
+	background-color: #611470;
+	border-radius: 4px;
+	padding: 0.6em 2em;
+	color: #fff;
+	transition: background-color 0.3s;
+	margin: 1rem 0;
+	text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.6);
+}
+.btn:hover{
+	background-color: #dca2e7;
+	color:  rgb(253, 255, 223);
+	text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.9);
+}
+body{
+  background-image: url('img/mosaique.jpg');
+}
+.divB{
+  width: 100%;
+}
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #611470; /* Couleur de fond */
+  color: white; /* Couleur du texte */
+  text-align: center;
+  text-decoration: none; /* Supprimer le soulignement */
+  border-radius: 5px; /* Coins arrondis */
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  margin-right: 10px;
+
+}
+
+.button:hover {
+  background-color: #dca2e7; /* Couleur de fond au survol */
+}
+main section div h1{
+  padding-left: 0;
+}
+hr {
+    border: 2px solid #000000; /* Couleur et épaisseur de la ligne */
+    margin: 20px 0; /* Espacement autour de la ligne */
+}
+.spanSign{
+  color: #999;
+}
