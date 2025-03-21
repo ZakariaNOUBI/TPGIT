@@ -63,7 +63,6 @@ h1 {
   font-weight: bold;
 }
 
-
 /* page nous joindre  */
 
 .h1Marg {
@@ -112,7 +111,6 @@ iframe {
   /*width: 90%;*/
 }
 .content {
-  
   width: 100%;
 
   padding: 0 100px; /* Ajoute 150px de marge intérieure (padding) à gauche et à droite */
@@ -343,7 +341,7 @@ img {
   max-width: 1400px; /* Largeur maximale du container */
   margin: 0 auto; /* Centrer le container horizontalement */
   padding: 20px; /* Espacement interne (padding) */
- /* background-color: #f4f4f4;  Couleur de fond du container */
+  /* background-color: #f4f4f4;  Couleur de fond du container */
   margin-top: 5%;
 
   display: flex; /* Utilisation de Flexbox pour disposer les éléments à l'intérieur */
@@ -465,32 +463,32 @@ img {
   justify-content: center; /* Centre horizontalement */
   align-items: center; /* Centre verticalement */
   width: 100%; /* Largeur du container (80% de la page) */
-   /* max-width: 1200px; /* Largeur maximale du container */
-    margin: 0 auto; /* Centrer le container horizontalement */
-    padding: 20px; /* Espacement interne (padding) */
-    background-color: #f4f4f4; /* Couleur de fond du container */
-    border-radius: 8px; /* Bordure arrondie */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre portée */
+  /* max-width: 1200px; /* Largeur maximale du container */
+  margin: 0 auto; /* Centrer le container horizontalement */
+  padding: 20px; /* Espacement interne (padding) */
+  background-color: #f4f4f4; /* Couleur de fond du container */
+  border-radius: 8px; /* Bordure arrondie */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre portée */
 }
 .btn {
-	display: inline-block;
-	background-color: #611470;
-	border-radius: 4px;
-	padding: 0.6em 2em;
-	color: #fff;
-	transition: background-color 0.3s;
-	margin: 1rem 0;
-	text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.6);
+  display: inline-block;
+  background-color: #611470;
+  border-radius: 4px;
+  padding: 0.6em 2em;
+  color: #fff;
+  transition: background-color 0.3s;
+  margin: 1rem 0;
+  text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.6);
 }
-.btn:hover{
-	background-color: #dca2e7;
-	color:  rgb(253, 255, 223);
-	text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.9);
+.btn:hover {
+  background-color: #dca2e7;
+  color: rgb(253, 255, 223);
+  text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.9);
 }
-body{
-  background-image: url('img/mosaique.jpg');
+body {
+  background-image: url("img/mosaique.jpg");
 }
-.divB{
+.divB {
   width: 100%;
 }
 .button {
@@ -504,19 +502,95 @@ body{
   font-size: 16px;
   transition: background-color 0.3s ease;
   margin-right: 10px;
-
 }
 
 .button:hover {
   background-color: #dca2e7; /* Couleur de fond au survol */
 }
-main section div h1{
+main section div h1 {
   padding-left: 0;
 }
 hr {
-    border: 2px solid #000000; /* Couleur et épaisseur de la ligne */
-    margin: 20px 0; /* Espacement autour de la ligne */
+  border: 2px solid #000000; /* Couleur et épaisseur de la ligne */
+  margin: 20px 0; /* Espacement autour de la ligne */
 }
-.spanSign{
+.spanSign {
   color: #999;
+}
+
+table {
+  width: 80%;
+  margin: 20px;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+  color: rgb(0, 0, 0);
+}
+
+tr:nth-child(even) /*Mr Laurent, j'ai fait une petite recherche pour les lignes pairs "even" et la selection impair "odd"*/ {
+  background-color: #f2f2f2;
+}
+
+/* Style pour les titres des sections */
+h2 {
+  text-align: center;
+  color: #333;
+}
+.divTab {
+  margin-left: 10%;
+    max-width: 100%;
+}
+.ensembleCom{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 10px;
+  
+  width: 100%;
+}
+.facture {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px;
+  height: 300px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Style pour le titre */
+.facture h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Style pour les paragraphes de la facture */
+.facture p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+/* Style pour la ligne de séparation */
+.facture hr {
+  margin: 20px 0;
+  border: 0;
+  border-top: 1px solid #ddd;
+}
+
+/* Style pour le bouton */
+
+
+/* Effet de survol du bouton */
+.facture button:hover {
+  
 }
