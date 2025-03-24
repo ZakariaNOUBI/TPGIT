@@ -42,11 +42,10 @@ h1 {
 
 /* Menu navigation */
 
-.navbar{
+.navbar {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap
-
+  flex-wrap: wrap;
 }
 .navbar ul {
   list-style: none;
@@ -55,7 +54,7 @@ h1 {
   padding: 0;
   margin-left: 30px;
   justify-content: center; /* Centre les éléments horizontalement */
-  align-items: center;     /* Centre les éléments verticalement */
+  align-items: center; /* Centre les éléments verticalement */
 }
 
 .navbar li {
@@ -83,7 +82,6 @@ h1 {
 .navbar a.commande:hover {
   background-color: #cdc9cf; /* Couleur au survol */
 }
-
 
 /* active page  */
 .activePage {
@@ -299,8 +297,28 @@ footer {
 }
 
 .footerright {
+  display: flex;
   text-align: right;
+  gap: 5px; 
   margin: 0%;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: stretch;
+  justify-content: flex-end;
+  /*flex-direction: row;*/
+
+  align-items: center;
+}
+.divEns {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: space-between;
+  justify-content: space-between;
+  align-items: center;
+}
+.imgic{
+  margin-right:4px;
 }
 /*----------------------------------------------------------------------------------*/
 * {
@@ -577,13 +595,13 @@ h2 {
 }
 .divTab {
   margin-left: 10%;
-    max-width: 100%;
+  max-width: 100%;
 }
-.ensembleCom{
+.ensembleCom {
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 10px;
-  
+
   width: 100%;
 }
 .facture {
@@ -617,10 +635,8 @@ h2 {
 
 /* Style pour le bouton */
 
-
 /* Effet de survol du bouton */
 .facture button:hover {
-  
 }
 /*--------------------------------------------*/
 /* Styles pour les écrans <= 960px (Tablettes et mobiles) */
@@ -628,15 +644,14 @@ h2 {
   .container {
     padding: 0 10px;
   }
-  .logo1{
+  .logo1 {
     visibility: visible;
     margin-left: 86%;
   }
-  .navbar{
+  .navbar {
     visibility: hidden;
   }
 
-  
   header {
     font-size: 1em;
   }
@@ -647,11 +662,11 @@ h2 {
   .container {
     padding: 0 5px;
   }
-  
+
   header {
     font-size: 0.9em;
   }
-  
+
   /* Ajustements spécifiques pour les petits écrans */
   .navigation {
     display: none; /* Par exemple, vous pouvez cacher certaines sections sur les petits écrans */
@@ -662,7 +677,7 @@ h2 {
   .container {
     padding: 0 15px;
   }
-  
+
   header {
     font-size: 1.2em;
   }
