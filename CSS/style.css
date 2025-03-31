@@ -383,7 +383,7 @@ img {
 }
 .container {
   width: 90%; /* Largeur du container (80% de la page) */
-  max-width: 1400px; /* Largeur maximale du container */
+  max-width: 1200px; /* Largeur maximale du container */
   margin: 0 auto; /* Centrer le container horizontalement */
   padding: 20px; /* Espacement interne (padding) */
   /* background-color: #f4f4f4;  Couleur de fond du container */
@@ -532,10 +532,11 @@ img {
   text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.9);
 }
 body {
-  background-image: url("img/mosaique.jpg");
+ 
 }
-.divB {
+.divBtn {
   width: 100%;
+  text-align: center;
 }
 .button {
   display: inline-block;
@@ -646,7 +647,7 @@ h2 {
   }
   .logo1 {
     visibility: visible;
-    margin-left: 86%;
+    margin-left: 76%;
   }
   .navbar {
     visibility: hidden;
@@ -665,11 +666,15 @@ h2 {
 
   header {
     font-size: 0.9em;
+    width: 100%;
   }
-
-  /* Ajustements spécifiques pour les petits écrans */
+  .logo1 {
+    visibility: visible;
+    margin-left: 86%;
+  }
+  
   .navigation {
-    display: none; /* Par exemple, vous pouvez cacher certaines sections sur les petits écrans */
+    display: none;
   }
 }
 /* Styles pour les écrans entre 960px et 1200px (Tablettes/Small Desktop) */
@@ -680,5 +685,55 @@ h2 {
 
   header {
     font-size: 1.2em;
+  }
+}
+/*-------------------------------------------------------------------------------------*/
+/* 1. Pour les écrans de 1200px ou moins */
+@media screen and (min-width:450px) and (max-width: 1200px) {
+  .container {
+    width: 90%;
+  }
+
+  header {
+    font-size: 18px;
+  }
+
+  button {
+    padding: 12px 25px;
+  }
+}
+
+/* 2. Pour les écrans de 960px ou moins */
+@media screen and (min-width:450px) and (max-width: 960px) {
+  .container {
+    width: 95%;
+  }
+
+  header {
+    font-size: 16px;
+  }
+
+  button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
+/* 3. Pour les écrans de 570px ou moins (par exemple, pour les mobiles) */
+@media screen and (min-width:450px) and (max-width: 570px) {
+  .container {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  header {
+    font-size: 14px;
+    padding: 15px 0;
+  }
+
+  button {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
   }
 }
