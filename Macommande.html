@@ -11,31 +11,28 @@
 
 </head>
 
-<body>
-    <header class="header">
-        <div class="logo-titre">
-
-            <a href="index.html">
-                <img src="img/logofinale.png" alt="Logo" class="logo">
-            </a>
-            <h1> La restauration marocaine</h1>
-
-        </div>
-        <!-- barre du navigation -->
-        <nav class="navbar">
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="Réservation.html">Réservation</a></li>
-                <li><a href="Restaurant.html">Restaurant</a></li>
-                <li><a href="Macommande.html" class="commande">Ma commande</a></li>
-            </ul>
-        </nav>
+<body class="container">
+    <header>
+      <div class="logo">
+        <a href="#"><img src="img/logofinale.png" alt="Logo" class="logo-img"></a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="réservation.html">Réservation</a></li>
+          <li><a href="restaurant.html">Restaurant</a></li>
+          <li><a href="Macommande.html" class="commande">Ma commande</a></li>
+        </ul>
+      </nav>
+      <div class="menu-mobile">
+        <button class="menu-icon">☰</button> <!-- Icône du menu mobile -->
+      </div>
     </header>
     <main>
         <h1> Ma commande</h1>
         <div class="ensembleCom">
             <div class="divTab">
-                <h2>Menu Entrées</h2>
+                <h2>Entrées</h2>
                 <table>
                     <thead>
                         <tr>
@@ -46,24 +43,24 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Salade César</td>
-                            <td>€8.50</td>
+                            <td>Salade marocaine</td>
+                            <td>$8.50</td>
                             <td>1</td>
                         </tr>
                         <tr>
-                            <td>Soupe du Jour</td>
-                            <td>€6.00</td>
+                            <td>Salade Jardin</td>
+                            <td>$6.00</td>
                             <td>1</td>
                         </tr>
                         <tr>
-                            <td>Bruschetta</td>
-                            <td>€7.00</td>
+                            <td>Tektouka</td>
+                            <td>$7.00</td>
                             <td>1</td>
                         </tr>
                     </tbody>
                 </table>
     
-                <h2>Menu Plats Principaux</h2>
+                <h2>Plats Principaux</h2>
                 <table>
                     <thead>
                         <tr>
@@ -74,24 +71,24 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Spaghetti Bolognese</td>
-                            <td>€14.00</td>
+                            <td>Bestilla</td>
+                            <td>$14.00</td>
                             <td>1</td>
                         </tr>
                         <tr>
-                            <td>Pizza Margherita</td>
-                            <td>€12.50</td>
+                            <td>Poulet grillé</td>
+                            <td>$12.50</td>
                             <td>1</td>
                         </tr>
                         <tr>
-                            <td>Steak Frites</td>
-                            <td>€18.00</td>
+                            <td>Viande aux figues</td>
+                            <td>$18.00</td>
                             <td>1</td>
                         </tr>
                     </tbody>
                 </table>
     
-                <h2>Menu Desserts</h2>
+                <h2>Autre</h2>
                 <table>
                     <thead>
                         <tr>
@@ -102,18 +99,18 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Tiramisu</td>
-                            <td>€5.50</td>
+                            <td>EL harira</td>
+                            <td>$5.50</td>
                             <td>1</td>
                         </tr>
                         <tr>
-                            <td>Crème Brûlée</td>
-                            <td>€6.50</td>
+                            <td>EL Bissara</td>
+                            <td>$6.50</td>
                             <td>1</td>
                         </tr>
                         <tr>
-                            <td>Profiteroles</td>
-                            <td>€6.00</td>
+                            <td>Chebakiya</td>
+                            <td>$6.00</td>
                             <td>1</td>
                         </tr>
                     </tbody>
@@ -122,20 +119,20 @@
 
             <div class="facture">
                 <h2>Facture</h2>
-                <p>Sous-total: <strong>€45.00</strong></p>
-                <p>Taxe (10%): <strong>€4.50</strong></p>
+                <p>Sous-total: <strong>$45.00</strong></p>
+                <p>Taxe (10%): <strong>$4.50</strong></p>
                 <hr>
-                <p><strong>Total: €49.50</strong></p>
+                <p><strong>Total: $49.50</strong></p>
                 
-                <a href="#"><button>Retour à la commande</button></a>
+                <a href="#"><button>Commander</button></a>
             </div>
         </div>
         
 
 
     </main>
-     <!-- footer code  -->
-  <footer class="">
+<!-- footer code  -->
+<footer class="">
 
 
     <br>
@@ -146,7 +143,7 @@
         <h6> Réalisé par : zakaria Noubi </h6>
       </div>
       <div class="footerright">
-        <h6> Réseaux sociaux <span>Trois-Rivières : </span> </h6>
+        <h6> Réseaux sociaux</h6>
         <a href=""><img src="img/facebook.png" alt="" class="imgic"></a> 
         <a href=""><img src="img/linkedin.png" alt=""
             class="imgic"></a> 
@@ -155,10 +152,9 @@
       </div>
     </div>
     <hr>
-    <div class="footerleft">
-      <h6> <span class="spanSign"> <u> Integration WEB</u></span></h6>
-    </div>
+   
     <div class="footerright">
+      <h6> <span class="spanSign"> <u> Integration WEB</u></span></h6>
       <h6> <span class="spanSign"> <u> Cégep deTrois-Rivières Hiver 2024</u></span></h6>
     </div>
     </div>
@@ -166,7 +162,5 @@
 
   </footer>
   <!-- fin code  footer   -->
-
 </body>
-
 </html>
