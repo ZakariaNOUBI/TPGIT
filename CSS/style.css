@@ -6,8 +6,8 @@
 }
 .container {
   max-width: 1200px;
-  margin: 0 auto; /* Cela centre le conteneur horizontalement */
-  padding: 0 1%; /* Optionnel : ajoute un peu de padding sur les côtés */
+  margin: 0 auto; 
+  padding: 0 1%; 
 }
 
 body {
@@ -17,8 +17,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 auto;
-  padding: 0 20px;
+  width: 90%;
 }
 
 header {
@@ -29,6 +28,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
 }
 
 header .logo a {
@@ -52,27 +52,27 @@ header nav ul li a {
   transition: color 0.3s ease;
 }
 a.commande {
-  background-color: #008cba; /* Couleur spécifique pour "Ma commande" */
-  font-weight: bold; /* Mettre le texte en gras */
-  border-radius: 5px; /* Bordure arrondie */
-  padding: 12px 20px; /* Plus d'espace autour du texte */
+  background-color: #008cba;
+  font-weight: bold; 
+  border-radius: 5px; 
+  padding: 12px 20px; 
 }
 
-/* Effet au survol de "Ma commande" */
- a.commande:hover {
-  background-color: #cdc9cf; /* Couleur au survol */
+
+a.commande:hover {
+  background-color: #cdc9cf; 
 }
 
 header nav ul li a:hover {
   color: #ff6600;
 }
 
-/* Style spécifique pour le lien "Ma commande" */
+
 header nav ul li a[href="#"] {
-  font-style: italic; /* Exemple de style spécifique pour "Ma commande" */
+  font-style: italic; 
 }
 
-/* Menu mobile (visible sur 960px et moins) */
+
 .menu-mobile {
   display: none;
 }
@@ -85,52 +85,7 @@ footer {
   width: 100%;
 }
 
-/* Responsive Design */
-@media screen and (max-width: 1200px) {
-  main {
-    margin: 0 20px;
-  }
-}
-
-@media screen and (max-width: 960px) {
-  header nav ul {
-    display: none; /* Masquer la barre de navigation normale */
-  }
-
-  header .menu-mobile {
-    display: block; /* Afficher l'icône du menu mobile */
-  }
-
-  header .menu-icon {
-    background-color: #0044cc;
-    color: white;
-    border: none;
-    font-size: 30px;
-    padding: 10px;
-    cursor: pointer;
-  }
-}
-
-@media screen and (max-width: 570px) {
-  body {
-    padding: 10px;
-  }
-
-  main {
-    padding: 10px;
-  }
-
-  header nav ul {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  footer {
-    padding: 5px;
-  }
-}
-
-/* Point de rupture pour 450px et plus petites tailles */
+/*
 @media screen and (max-width: 450px) {
   body {
     padding: 5px;
@@ -156,7 +111,7 @@ footer {
   footer {
     padding: 5px;
   }
-}
+}*/
 .main {
   padding-top: 40px; /* Espace après le header */
 }
@@ -165,22 +120,22 @@ footer {
 .presentation {
   display: flex;
   align-items: center;
-  gap: 20px; /* Espace entre l'image et le titre */
-  margin: 20px; /* Ajoute un peu d'espace autour de la section */
+  gap: 20px; 
+  margin: 20px; 
 }
 .presentation2 {
   display: flex;
   align-items: center;
   gap: 10px;
-  margin: 20px; /* Ajoute un peu d'espace autour de la section */
+  margin: 20px; 
   flex-direction: column;
   align-items: flex-start;
 }
 
 .restaurant-img {
-  width: 600px; /* Largeur de l'image */
-  height: auto; /* Hauteur automatique pour garder les proportions */
-  border-radius: 8px; /* Coins arrondis pour l'image */
+  width: 600px; 
+  height: auto; 
+  border-radius: 8px; 
 }
 
 /* Boutons */
@@ -210,7 +165,7 @@ footer {
 }
 
 .commander {
-  background-color: #008cba; /* Couleur spécifique pour "Commander en ligne" */
+  background-color: #008cba; 
 }
 
 .commander:hover {
@@ -218,7 +173,7 @@ footer {
 }
 
 .reserver {
-  background-color: #f39c12; /* Couleur spécifique pour "Réserver" */
+  background-color: #f39c12; 
 }
 
 .reserver:hover {
@@ -228,7 +183,7 @@ footer {
 .reviews {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px; /* Espace entre les éléments */
+  gap: 20px; 
   justify-content: space-between;
   width: 100%;
   max-width: 1200px;
@@ -295,54 +250,88 @@ footer {
 .content {
   width: 100%;
 
-  padding: 0 100px; /* Ajoute 150px de marge intérieure (padding) à gauche et à droite */
+  padding: 0 100px; 
   display: flex;
   flex-direction: column;
   gap: 20px;
-  margin: 0 auto; /* Centre le contenu horizontalement */
   margin-top: 5%;
 }
 
 /* Grille des images */
-.grid-container {
+.grid-containerRES {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 3 colonnes égales */
-  gap: 20px;
+  grid-template-columns: repeat(4, 1fr); 
+  grid-template-rows: repeat(3, 1fr); 
+  gap: 10px; 
+  width: 100%;
+  height: 100vh; 
 }
 
-.grid-container img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
+.grid-item {
+  background-color: #f4f4f4; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc; 
+  height: 100%;
+  overflow: hidden;
 }
-.image1,
+.grid-item img {
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
+  border-radius: 8px; 
+}
+.grid-container div {
+  background-size: cover; 
+  background-position: center; 
+  height: 100%; 
+  border-radius: 8px; 
+}
+.image1 {
+  background-image: url("img/rfissa.jpg");
+  grid-column: span 1; 
+  object-fit: cover;
+}
 .image2 {
- 
+  background-image: url("img/mhamer.jpg");
   width: 100%;
-  grid-column: span 1; /* Les images 1 et 2 ont la taille normale */
+  grid-column: span 1; 
+  object-fit: cover;
 }
 
 .image3 {
+  background-image: url("img/djaj.jpg");
+  grid-row: span 2;
   grid-column: span 2; /* La troisième image occupe 2 colonnes */
+  object-fit: cover;
 }
 
 .image4 {
+  background-image: url("img/Tajine.jpg");
+  grid-row: span 2;
   grid-column: span 2; /* La quatrième image occupe 2 colonnes */
+  object-fit: cover;
 }
 
-.image5,
+.image5 {
+  background-image: url("img/bastila.jpg");
+  grid-column: span 1; 
+  object-fit: cover;
+}
 .image6 {
- 
+  background-image: url("img/Harira.jpg");
   grid-column: span 1; /* Les images 5 et 6 prennent 1 colonne */
+  object-fit: cover;
 }
 
-/* Section en bas (informations et iframe) */
+/* Section informations et iframe */
 .bottom-section {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 20px;
   padding-top: 50px;
+  gap: 20px;
   padding-bottom: 50px;
 }
 
@@ -454,12 +443,12 @@ tr:nth-child(even) /*Mr Laurent, j'ai fait une petite recherche pour les lignes 
 /* Style pour le bouton */
 
 /* Effet de survol du bouton */
-.facture button:hover {
+.commandeC:hover {
   background-color: #705ccc;
   color: rgb(253, 255, 223);
   text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.9);
 }
-button {
+.commandeC {
   display: inline-block;
   background-color: #0044cc;
   border-radius: 4px;
@@ -468,26 +457,25 @@ button {
   transition: background-color 0.3s;
   margin: 1rem 0;
   text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.6);
+  text-decoration-line: none;
 }
 /* réservation container*/
 .containerRes {
-  width: 90%; /* Largeur du container (80% de la page) */
-  max-width: 1400px; /* Largeur maximale du container */
-  margin: 0 auto; /* Centrer le container horizontalement */
-  padding: 20px; /* Espacement interne (padding) */
-  background-color: #0044cc; /* Couleur de fond du container */
+  width: 90%; 
+  max-width: 1400px; 
+  margin: 0 auto; 
+  padding: 20px; 
+  background-color: #0044cc; 
 }
 .divForm {
-  /*display: flex;
-    justify-content: center; /* Centre horizontalement */
-  align-items: center; /* Centre verticalement */
-  width: 100%; /* Largeur du container (80% de la page) */
-  /* max-width: 1200px; /* Largeur maximale du container */
-  margin: 0 auto; /* Centrer le container horizontalement */
-  padding: 20px; /* Espacement interne (padding) */
-  background-color: #fff; /* Couleur de fond du container */
-  border-radius: 8px; /* Bordure arrondie */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre portée */
+  align-items: center; 
+  width: 100%; 
+  /* max-width: 1200px; */
+  margin: 0 auto; 
+  padding: 20px; 
+  background-color: #fff; 
+  border-radius: 8px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 .h1Reservation {
   text-align: center;
@@ -532,59 +520,255 @@ footer {
 .imgic {
   margin-right: 4px;
 }
-/*les images avec les diapositifs*/
-@media (max-width: 768px) {
-  main h1 {
-    text-align: center;
-  }
-  .grid-container {
-    grid-template-columns: 1fr; /* 1 image per row on mobile */
-  }
-  .image1,
-  .image2 {
-  
-    width: 40%;
-    height: auto;
-    grid-column: span 1; /* Les images 1 et 2 ont la taille normale */
-  }
 
-  .image3 {
-    grid-column: span 1; /* La troisième image occupe 2 colonnes */
-    width: 40%;
-    height: auto;
-  }
+header .logo {
+  display: flex;
+  align-items: center; 
+}
 
-  .image4 {
-    grid-column: span 1; /* La quatrième image occupe 2 colonnes */
-    width: 40%;
-    height: auto;
-  }
+header .logo .logo-text {
+  font-size: 24px; 
+  color: white; 
+  font-weight: bold; 
+  margin-left: -40px; 
+  text-decoration-line: none;
+}
 
-  .image5,
-  .image6 {
-   
-    grid-column: span 1; /* Les images 5 et 6 prennent 1 colonne */
-    width: 40%;
-    height: auto;
+/*------------------------------------------------les media -----------------------------------------------*/
+
+
+@media screen and (max-width: 1200px) {
+  header .logo .logo-img {
+    width: 150px; 
   }
-  .bottom-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  .grid-containerRES {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: repeat(3, 1fr); 
+    gap: 10px; 
     width: 100%;
-    gap: 10px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    flex-direction: column-reverse;
+    height: 100vh; 
+  }
+  
+}
+
+/* Desktop 1200px */
+@media screen and (max-width: 1200px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  }
+
+  header .logo .logo-img {
+    width: 150px;
   }
 }
 
-/* Tablette view */
-@media (min-width: 769px) and (max-width: 1050px) {
-  main h1 {
+/* screen 960px */
+@media screen and (max-width: 961px) {
+  body{
+    width: 100%;
+  }
+  .bottom-section {
+    display: flex;
+    gap: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    align-items: center;
+  }
+  main div div h2 {
+    text-align: center;
+    /*max-width: 100%;*/
+  }
+  .ensembleCom {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    flex-direction: column;
+  }
+  body main h1 {
     text-align: center;
   }
-  .grid-container {
-    grid-template-columns: repeat(2, 1fr);
+
+  .buttons {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .Pour960 {
+    text-align: center;
+  }
+  .presentation {
+    display: flex;
+    gap: 10px;
+    margin: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+  header {
+    background-color: #0044cc;
+    color: white;
+    padding: 20px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 1%;
+  }
+  .grid-containerRES {
+    display: inline;
+  }
+  
+
+  header nav ul {
+    display: none; 
+  }
+
+  header .menu-mobile {
+    display: block; 
+  }
+
+  .bottom-section {
+    flex-direction: column;
+  }
+}
+
+.divMarocainP {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, sans-serif;
+  font-size: 16px;
+  color: #444;
+  line-height: 1.8;
+}
+/* Mobile 570px */
+@media screen and (max-width: 571px) {
+  .grid-containerRES {
+    display: inline;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(4, 1fr); 
+    gap: 10px; 
+    width: 100%;
+    height: 100vh; 
+  }
+  .grid-item img {
+    width: 70%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+  body main h1 {
+    text-align: center;
+  }
+  .divMarocainP {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 98%;
+  }
+  .reviews {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .review {
+    background-color: #d3ccd6d9;
+    padding: 20px;
+    width: 70%;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+  }
+  body {
+    padding: 10px;
+  }
+  .grid-containerRES {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(4, 1fr); 
+    gap: 10px; 
+    width: 100%;
+    height: 100vh; 
+  }
+  .image1,
+  .image2,
+  .image3,
+  .image4,
+  .image5,
+  .image6 {
+    grid-column: span 1;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer {
+    padding: 5px;
+  }
+  .presentation,
+  .presentation2 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .buttons {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: stretch;
+  }
+}
+
+/* Mobile 450px and below */
+@media screen and (max-width: 450px) {
+  .grid-containerRES {
+    display: inline;
+    gap: 10px; 
+    width: 100%;
+    height: 100vh; 
+  }
+  .grid-item img {
+    width: 70%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+  body main h1 {
+    text-align: center;
+  }
+  .presentation,
+  .presentation2 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .restaurant-img {
+    width: 100%; 
+  }
+  .review {
+    background-color: #d3ccd6d9;
+    padding: 20px;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+  }
+  .buttons {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: stretch;
   }
 }
